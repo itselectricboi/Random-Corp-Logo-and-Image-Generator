@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corporate PR Email Random Generator</title>
+</head>
+<style>
+
+
+    .name {
+        color: #444;
+        font: bold 51px times, Times New Roman, times-roman, georgia, serif;
+        font-size: 20px;
+        letter-spacing: -2px;
+        line-height: 50px;
+        text-align: left;
+    }
+
+    .corporate_pr {
+       display:grid;
+       height: 50%;
+    }
+</style>
+<body>
+
+
+
+    <div class="logo">
+
+        <!--Random Corporate Logo Image Generator-->
+        <script language="JavaScript">
+        <!--
+
+            function random_imglink() {
+                var myimages = new Array()
+
+                //Randomized Images
+                myimages[1] = "logo1.jpg"
+                myimages[2] = "logo2.jpg"
+                myimages[3] = "logo3.jpg"
+                myimages[4] = "logo4.jpg"
+
+                var ry = Math.floor(Math.random() * myimages.length)
+                if (ry == 0)
+                    ry = 1
+                document.write('<img src="' + myimages[ry] + '" border=0>')
+            }
+            random_imglink()
+            //-->
+        </script>
+
+    </div>
+
+    <div class="name">
+        <script type='text/javascript'>
+            consonnants = [
+                'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm',
+                'n', 'p', 'r', 's', 't', 'th', 'v', 'x', 'z'];
+            vowels = ['a', 'au', 'e', 'i', 'o', 'ou', 'u', 'y'];
+
+            name = "";
+            length = Math.floor(Math.random() * 3) + 2;
+            for (i = 0; i < length; i++)
+                name += (consonnants[Math.floor(Math.random() * consonnants.length)]
+                    + vowels[Math.floor(Math.random() * vowels.length)]);
+            name = name.charAt(0).toUpperCase() + name.slice(1);
+            inc = "Incorporated";
+            document.write("<h1 id='name'>" + name + "</h1>" + "<h1 id='inc'>" + inc + "</h1>");
+
+            </script>
+    </div>
+
+    <div class="corporate_pr">
+
+        <!--Random Corporate Image Generator-->
+
+        <script language="JavaScript">
+        <!--
+
+            function random_imglink() {
+                var myimages = new Array()
+
+                //Randomized Images
+                myimages[1] = "image1.jpg"
+                myimages[2] = "image2.jpg"
+                myimages[3] = "image3.jpg"
+                myimages[4] = "image4.jpg"
+
+                var ry = Math.floor(Math.random() * myimages.length)
+                if (ry == 0)
+                    ry = 1
+                document.write('<img src="' + myimages[ry] + '" border=0>')
+            }
+            random_imglink()
+                        //-->
+        </script>
+
+    </div>
+
+</body>
+
+</html>
